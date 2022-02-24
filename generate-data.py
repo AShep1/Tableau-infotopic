@@ -20,7 +20,7 @@ channel = DynamicProvider(
 
 region = DynamicProvider(
      provider_name="region",
-     elements=["NSW","QLD","VIC","Den Hague"],
+     elements=["NSW","QLD","VIC","Den Haag"],
 )
 
 enddate=datetime.date(2022,2,28)
@@ -73,4 +73,4 @@ while i<=numpeeps:
     i=i+1
     
 
-df.to_csv('pretendd_ata.csv',index=False)    
+df.to_csv('pretend_data.csv',index=False)    
