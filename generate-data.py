@@ -39,6 +39,8 @@ while i<=numpeeps:
 
     fake.add_provider(internet)
     fake.add_provider(industry)
+    fake.add_provider(channel)
+    fake.add_provider(region)
     
     
     cursordate = datetime.date(2020,1,31)
@@ -52,6 +54,8 @@ while i<=numpeeps:
             'name':fake.name(),
             'ip':fake.ipv4_private(),
             'industry':fake.industry(),
+            'region':fake.region(),
+            'channel':fake.channel(),
             'address':fake.address(),
             'balance':random.randint(0, 1000000)
             }
